@@ -26,3 +26,5 @@ jogl-all.jar
 Where the "______" depends on the user's OS - e.g. windows-amd64.
 
 As to the code itself, OpenNIHandler may or may not have a memory leak [lines 265-270]. Last time I used it the code currently there seemed to stop it, but using the same set-up in a different project still resulted in a leak.
+
+To be controllable, an application must meet the requirements of the KinectSubject interface. Having said that, the code to control the mouse is not limited to the application itself, so if it runs in the background, you have control of the mouse no matter where it is on screen.
